@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Politique de Confidentialité</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Amorre d'Italia</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#" id="openModal">Reservation</a></li>
+                <li><a href="#" id="horairesLink"><img src="img/horaires.png" class="horaire" alt="hotaires"></a></li>
+            </ul>
+        </div>
+
+        <div id="reservationModal" class="modal">
+            <div class="modal-content">
+                <div class="x"><span class="close">&times;</span></div>
+                <h2>Réserver une table</h2>
+                <form id="reservationForm">
+                    <label for="datetime">Choisissez une date et une heure:</label><br>
+                    <input type="datetime-local" id="datetime" name="datetime"><br><br>
+                    <button type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="horairesPopup" class="popup">
+            <p><strong>Horaires d'ouverture:</strong></p>
+            <p>Lundi - Vendredi: <br> 11h - 22h</p>
+            <p>Samedi: <br> 12h - 23h</p>
+            <p>Dimanche: <br> 12h - 21h</p>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/slide.jpg" alt="Image 1">
+                    <h2>Amorre d’Italia c’est l’amour de la haute gastronomie fine</h2>
+                </div>
+                <div class="slide">
+                    <img src="img/slide2.jpg" alt="Image 2">
+                    <h2>Amore d'Italia c'est l'amour des produits frais et de qualité</h2>
+                </div>
+                <div class="slide">
+                    <img src="img/slide3.jpg" alt="Image 3">
+                    <h2>Amorre d'Italia c'est l'amour d'une très bonne experience culinaire</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="newsletter">
+        <h3>Newsletter</h3>
+        
+        <form action="submit">
+            <div class="group">
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <button>→</button>
+            </div>
+            <p class="np">Abonnez-vous à notre revue pour connaître nos secrets</p>
+        </form>
+
+    </div>
+
+    <div class="page">
+        <div class="map">
+            <h2>Où Sommes nous ?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.6892746750551!2d3.170737899906965!3d50.69465950077508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328e93b82d557%3A0x8884df0eb1ac375f!2s3%20Rue%20des%20%C3%89coles%2C%2059100%20Roubaix!5e1!3m2!1sfr!2sfr!4v1720720588240!5m2!1sfr!2sfr">
+            </iframe>
+        </div>
+        <div class="social">
+            <a href="mailto:amorreditalia@outlook.com">
+                <h3><img src="img\mail.png"> amorreditalia@outlook.com</h3>
+            </a>
+            <a href="tel:+3348502949">
+                <h3><img src="img/tel.png"> 03.48.50.29.49</h3>
+            </a>
+            <a href="https://www.instagram.com/amorreditalia" target="_blank">
+                <h3><img src="img/ig.png">Amorre d’italia</h3>
+            </a>
+            <a href="https://www.facebook.com/amorreditalia" target="_blank">
+                <h3><img src="img/fb.png">Amorre d’italia</h3>
+            </a>
+        </div>
+    </div>
+    <div class="galerie">
+        <div class="plats">
+            <img src="img/focacia.jpg" alt="Image 1" class="imgplat">
+            <img src="img/risoto.jpg" alt="Image 2" >
+            <img src="img/panna.jpg" alt="Image 3" class="imgplat">
+        </div>
+        <div class="description">
+            Bienvenue chez Amorre d'Italia, un restaurant où l'authenticité italienne rencontre le raffinement. 
+            Savourez des plats emblématiques tels que la focaccia aux tomates confites, le risotto e ossobuco ou bien notre 
+            panna cotta au de coulis de fruits rouges. Chaque détail, du service à 
+            la présentation, est pensé pour offrir une expérience culinaire inoubliable...
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+<footer>
+    <hr>
+    <div class="p">
+        Tous droits résérvés ©
+    </div>
+    <div>
+        <a href=""></a>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\reservation.css">
+    <link rel="icon" href="img/logo.png" type="imglogo.png">
+    <title>Amorre d'Italia</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="arriere"><img src="img/arriere.png" alt="arriere"></a>
+        <div class="logo"><a href="index.html"><img src="img/logo.png"></div></a>
+
+    </header>
+    <div>
+
+    </div>
+    <div class="page">
+        <div class="message">
+            <h2>Merci pour votre réservation !</h2>
+            <p id="reservationMessage"></p>
+        </div>
+
+
+        <form action="#" method="post">
+
+            <div class="radio-group">
+                <label for="choix1">
+                    <input type="radio" id="choix1" name="choix" value="choix1" required>
+                    Madames
+                </label>
+                <label for="choix2">
+                    <input type="radio" id="choix2" name="choix" value="choix2">
+                    Monsieurs
+                </label>
+                <label for="choix3">
+                    <input type="radio" id="choix3" name="choix" value="choix3">
+                    Mixte
+                </label>
+                <label for="choix4">
+                    <input type="radio" id="choix4" name="choix" value="choix4">
+                    Famille
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="nom">Nom :
+                    <input type="text" id="nom" name="nom" required maxlength="50" minlength="3">
+                </label>
+                <label for="prenom">Prénom :
+                    <input type="text" id="prenom" name="prenom" required maxlength="50" minlength="3">
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email :
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="telephone">Téléphone :
+                    <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}">
+                </label>
+            </div>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" minlength="10"></textarea><br>
+            <div class="valider">
+                <button type="submit">Valider</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="js/reservation.js"></script>
+</body>
+
+</html>

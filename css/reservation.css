@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #2D2828;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+header a {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.arriere {
+    background-color: #FFC34A;
+    width: 50px;
+    height: 40px;
+    margin-left: 40px ;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo img {
+    width: 125px;
+    margin: 25px 0;
+}
+
+
+.page {
+    margin: 50px 25px;
+}
+
+
+.message {
+    color: #EEE;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+
+form {
+    font-family: "italianno", "sans-serif";
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+.radio-group, .input-group {
+    display: flex;
+    gap: 20px;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+input{
+    border-radius: 5px;
+}
+.input-group label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+    height: 130px;
+    border-radius: 5px;
+}
+.valider {
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    width: 150px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .logo img {
+        margin: 20px 0;
+    }
+    .arriere {
+        width: 40px;
+        height: 30px;
+        margin: 15px 0 0 20px ;
+    }
+}
